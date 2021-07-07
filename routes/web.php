@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\ChatController;
+use App\Http\Controllers\MessageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,9 +25,15 @@ Route::get('/services', [PagesController::class, 'services']);
 // Route::get('create', [PostsController::class, 'create']);
 // Route::post('store', [PostsController::class, 'store']);
 // Route::get('/posts/{id}/edit', [PostsController::class, 'edit']);
+Auth::routes();
+
 Route::resource('posts', 'App\Http\Controllers\PostsController');
-
-
+Route::resource('chat', 'App\Http\Controllers\ChatController');
+Route::get('conversation/{userId}', 'App\Http\Controllers\MessageController@conversation')->name('message.conversation');
+Route::post('send-message', 'App\Http\Controllers\MessageController@sendMessage')->name('message.send-message');
+// Route::get('/chat', function(){
+//     return view('chat');
+// });
 
 
 
@@ -40,5 +48,9 @@ Route::resource('posts', 'App\Http\Controllers\PostsController');
 
 Auth::routes();
 
+
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/chat', [App\Http\Controllers\ChatController::class, 'chat'])->name('chat');
 Route::get('auth/logout', 'Auth\AuthController@logout');
+

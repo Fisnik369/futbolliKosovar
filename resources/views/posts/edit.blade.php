@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>Edit Post</h1>
+<h1>Edit your blog</h1>
 
 {!! Form::open(['action' => ['App\Http\Controllers\PostsController@update', $post->id], 'method' => 'POST']) !!}
     <div class="form-group">

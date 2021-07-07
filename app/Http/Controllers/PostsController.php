@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\User_detail;
 
 class PostsController extends Controller
 {
@@ -14,7 +15,8 @@ class PostsController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'show']]);
+        // $this->middleware('auth', ['except' => ['index', 'show']]);
+        $this->middleware('auth');
     }
     /**
      * Display a listing of the resource.
@@ -52,6 +54,7 @@ class PostsController extends Controller
             'body' => 'required'
 
         ]);
+
         $post = new Post;
         $details = new User_detail;
         $post->title = $request->input('title');
