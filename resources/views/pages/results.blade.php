@@ -6,7 +6,7 @@
 
         <table class="table">
             
-            <h1>Tabela perfundimtare e superliges Kosovare per sezonin 2020/21</h1>
+            <h1>Lojet e ekipes {{$team}} ne superliges Kosovare per sezonin 2020/21</h1>
             <thead>
               <tr>
                 <th scope="col">Ekipi vendas</th>
@@ -19,13 +19,17 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-success">
-                <th scope="row">1</th>
-                <td> <b>Prishtina</b></td>
-                <td>15</td>
-                <td>6</td>
-                <td>64</td>
+              @foreach ($matches as $match)
+              <tr class="">
+                <td> <b>{{$match->team1}}</b></td>
+                <td>{{$match->matchResult}}</td>
+                <td>{{$match->team2}}</td>
+                <td>{{$match->matchDate}}</td>
+                <td>{{$match->time}}</td>
               </tr>
+                
+              @endforeach
+              
              
             </tbody>
 

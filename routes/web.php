@@ -5,6 +5,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\MessageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,6 +32,7 @@ Route::resource('posts', 'App\Http\Controllers\PostsController');
 Route::resource('chat', 'App\Http\Controllers\ChatController');
 Route::get('conversation/{userId}', 'App\Http\Controllers\MessageController@conversation')->name('message.conversation');
 Route::post('send-message', 'App\Http\Controllers\MessageController@sendMessage')->name('message.send-message');
+Route::get('ekipi/{team}',[PagesController::class, 'team'])->name('team.getTeamResult');
 // Route::get('/chat', function(){
 //     return view('chat');
 // });

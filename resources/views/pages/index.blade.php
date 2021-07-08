@@ -23,71 +23,73 @@
             </thead>
             <tbody>
               <tr class="bg-success">
+                
                 <th scope="row">1</th>
-                <td> <b>Prishtina</b></td>
+                <td> <a href="{{route('team.getTeamResult',['Prishtina'])}}"><b>Prishtina</b> </a></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
+               
               </tr>
               <tr class="bg-success">
                 <th scope="row">2</th>
-                <td> <b>Drita</b></td>
+                <td> <a href="{{route('team.getTeamResult',['Drita'])}}"><b>Drita</b></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td> <b>Ballkani</b></td>
+                <td> <a href="{{route('team.getTeamResult',['Ballkani'])}}"><b>Ballkani</b></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
               </tr>
               <tr>
                 <th scope="row">4</th>
-                <td> <b>Gjilani</b></td>
+                <td> <a href="{{route('team.getTeamResult',['Gjilani'])}}"><b>Gjilani</b></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
               </tr>
               <tr>
                 <th scope="row">5</th>
-                <td> <b>Ferronikeli</b></td>
+                <td><a href="{{route('team.getTeamResult',['Ferronikeli'])}}"> <b>Ferronikeli</b></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
               </tr>
               <tr>
                 <th scope="row">6</th>
-                <td> <b>Llapi</b></td>
+                <td> <a href="{{route('team.getTeamResult',['Llapi'])}}"><b>Llapi</b></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
               </tr>
               <tr>
                 <th scope="row">7</th>
-                <td> <b>Drenica</b></td>
+                <td> <a href="{{route('team.getTeamResult',['Drenica'])}}"><b>Drenica</b></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
               </tr>
               <tr class="bg-warning">
                 <th scope="row">8</th>
-                <td> <b>Trepca '89</b></td>
+                <td><a href="{{route('team.getTeamResult',['Trepca'])}}"> <b>Trepca '89</b></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
               </tr>
               <tr class="bg-danger">
                 <th scope="row">9</th>
-                <td> <b>Arberia</b></td>
+                <td> <a href="{{route('team.getTeamResult',['Arberia'])}}"><b>Arberia</b></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
               </tr>
               <tr class="bg-danger">
                 <th scope="row">10</th>
-                <td> <b>Besa</b></td>
+                <td> <a href="{{route('team.getTeamResult',['Besa'])}}"><b>Besa</b></td>
                 <td>15</td>
                 <td>6</td>
                 <td>64</td>
