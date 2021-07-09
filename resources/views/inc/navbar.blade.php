@@ -18,12 +18,6 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/">Home</a>
               </li>
-              {{-- <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/services" >Services</a>
-              </li> --}}
               <li class="nav-item">
                 <a class="nav-link" href="/posts" >Postet</a>
               </li>
@@ -32,6 +26,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/chat" >Chat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:3000/" >Video Call</a>
               </li>
             </ul>
 

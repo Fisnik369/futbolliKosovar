@@ -33,7 +33,7 @@
                 Message Section
             </h1>
             <p class="lead">
-            Select user from the list to begin converstation.
+            Selekto perdoruesin me te cilin deshiron te bisedosh
 
             </p>
         </div>

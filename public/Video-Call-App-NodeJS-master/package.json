@@ -1,0 +1,26 @@
+{
+  "name": "livestream-server",
+  "version": "0.0.1",
+  "description": "Video Chat",
+  "main": "src/app.js",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.10"
+  },
+  "scripts": {
+    "watch": "nodemon --watch \"src/\" --exec \"node src/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "LiveStream",
+    "Server"
+  ],
+  "author": "Nderon Hyseni",
+  "license": "ISC"
+}

@@ -2,7 +2,7 @@
 
 @section('content')
     
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center bg-success">
 
         <table class="table">
             
@@ -14,7 +14,6 @@
                 
                 <th scope="col">Ekipi mysafir</th>
                 <th scope="col">Data</th>
-                <th scope="col">Ora</th>
                 
               </tr>
             </thead>
@@ -22,21 +21,19 @@
               @foreach ($matches as $match)
               <tr class="">
                 <td> <b>{{$match->team1}}</b></td>
-                <td>{{$match->matchResult}}</td>
-                <td>{{$match->team2}}</td>
-                <td>{{$match->matchDate}}</td>
-                <td>{{$match->time}}</td>
+                <td> <b>{{$match->matchResult}}</b> </td>
+                <td> <b> {{$match->team2}} </b> </td>
+                <td> <b>{{$match->matchDate}}</b> </td>
+                
+                
               </tr>
                 
               @endforeach
               
              
             </tbody>
-
            
           </table>
-    
-
     
     </div>
  @endsection
