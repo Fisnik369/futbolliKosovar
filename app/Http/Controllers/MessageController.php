@@ -20,8 +20,7 @@ class MessageController extends Controller
         $this->data['friendInfo'] = $friendInfo;
         $this->data['myInfo'] = $myInfo;
         $this->data['users'] = $users;
-        // $this->data['userId'] = $userId;
-
+       
         return view('message.conversation', $this->data);
     }
 
